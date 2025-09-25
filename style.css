@@ -1,0 +1,181 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b2b2b;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* card grid */
+.cards{
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    gap: 200px;
+}
+/* single card style */
+.card{
+    width: 210px;
+    height: 300px;
+    background: white;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+/* label*/
+.top{
+     position: absolute;
+     font-size: 22px;
+     font-weight: bold;
+     top: 8px;
+     left: 10px;
+}
+.bottom{
+    position: absolute;
+     font-size: 22px;
+     font-weight: bold;
+     top: 260px;
+     left: 180px;
+     transform:rotate(180deg)
+}
+.card.red .label{
+    color:red;
+}
+.card.black .label{
+    color: black;
+}
+/* symbol */
+
+.symbol{
+    position: relative;
+    height: 80px;
+    width: 80px;
+}
+
+
+/*-------------Heart-----------*/
+.heart .square{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background: red;
+    left: 20px;
+    top: 0.9em;
+    transform: rotate(45deg);
+    border-radius: 4px;
+
+}
+.heart .circle1{
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    background:red;
+    border-radius: 50%;
+    top:4px;
+    left: 8px;
+}
+.heart .circle2{
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    background: red;
+    border-radius: 50%;
+    top: 4px;
+    left: 36px;
+}
+ 
+
+/*-----Diamond---*/
+ .diamond .square{
+     position: absolute;
+     width: 54px;
+     height: 54px;
+     background: red;
+     left: 60px;
+     top: 70px;
+     transform: rotate(45deg);
+ }
+   
+
+
+ /*------spade----*/
+ .spade .circle1{
+     position: absolute;
+     width: 40px;
+     height: 40px;
+     background: black;
+     border-radius: 50%;
+     top: 0;
+     left: 0;
+ }
+  .spade .circle2{
+     position: absolute;
+     width: 40px;
+     height: 40px;
+     background: black;
+     border-radius: 50%;
+     top: 0;
+     left: 32px;
+ }
+  .spade .triangle1{
+     width: 0;
+     height: 0;
+     border-left: 34px solid transparent;
+     border-right: 34px solid transparent;
+    border-bottom: 40px solid black;
+    position: absolute;
+     left: 3px;
+     bottom: 69px;
+ }
+ .spade .stick1{
+    position: absolute;
+    width: 15px;
+    height: 25px;
+    background: black;
+    border-radius: 3px;
+    top: 31px;
+    left:30px;
+
+ }
+
+ /*----club---*/
+ .club .circle1{
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    background: black;
+    border-radius: 50%;
+    left:19px;
+    top:0;
+ }
+  .club .circle2{
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    background: black;
+    border-radius: 50%;
+    left: 0px;
+    top:26px;
+ }
+  .club .circle3{
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    background: black;
+    border-radius: 50%;
+    left:38px;
+    top:26px;
+ }
+   .club .stick1{
+    position: absolute;
+    width: 18px;
+    height: 28px;
+    background: black;
+    border-radius: 3px;
+    left:31px;
+    top:55px;
+ }
